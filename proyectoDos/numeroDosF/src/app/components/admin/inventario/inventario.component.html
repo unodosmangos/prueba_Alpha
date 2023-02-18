@@ -1,0 +1,20 @@
+<section class="container">
+  <h1>{{ tituloComponente }}</h1>
+  <form [formGroup]="inventarioForm" (ngSubmit)="enviarInformacion()">
+    <div>
+      <input type="text" class="form-control" id="item" formControlName="item">
+      <label for="item">Item</label>
+      <span *ngIf="inventarioForm.get('item')?.hasError('required') && inventarioForm.get('item')?.touched">Insert item name.</span>
+    </div>
+    <div>
+      <input type="text" class="form-control" id="descripcion">
+      <label for="descripcion">Descripción</label>
+      <span *ngif="inventarioForm.get('descripcion')?.hasError('required') && inventarioForm.get('descripcion')?.touched">Add description.</span>
+    </div>
+    <div>
+      <input type="text" class="form-control" id="rutaImagen">
+      <label for="rutaImagen">Ruta Imagen</label>
+      <span *ngIf="inventarioForm.get('rutaImg')?.hasError('required') && inventarioForm.get('rutaImg')?.touched">Add image url</span>
+    </div>
+  </form>
+</section>

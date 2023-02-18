@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormsModule, Validators } from '@angular/forms';
-import { Router } from 'express';
-import { threadId } from 'worker_threads';
 
 @Component({
   selector: 'app-register',
@@ -18,8 +16,6 @@ export class RegisterComponent {
 
   constructor(private fb: FormBuilder){
     this.registerForm = this.fb.group({
-      name: ['', Validators.required],
-      lastName: ['', Validators.required],
       email: ['', Validators.required],
       password: ['', Validators.required],
     })
