@@ -12,7 +12,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { MainAdminComponent } from './components/admin/main-admin/main-admin.component';
 
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { NavbarHomeComponent } from './components/navbar/navbar-home/navbar-home.component';
+
 
 
 
@@ -25,12 +26,12 @@ import { HttpClientModule } from '@angular/common/http';
     InventarioComponent,
     NotfoundComponent,
     MainAdminComponent,
+    NavbarHomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
