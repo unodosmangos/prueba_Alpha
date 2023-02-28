@@ -13,6 +13,7 @@ import { MainAdminComponent } from './components/admin/main-admin/main-admin.com
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarHomeComponent } from './components/navbar/navbar-home/navbar-home.component';
+import { NavbarDashboardComponent } from './components/navbar/navbar-dashboard/navbar-dashboard.component';
 
 
 
@@ -27,6 +28,7 @@ import { NavbarHomeComponent } from './components/navbar/navbar-home/navbar-home
     NotfoundComponent,
     MainAdminComponent,
     NavbarHomeComponent,
+    NavbarDashboardComponent,
   ],
   imports: [
     BrowserModule,
