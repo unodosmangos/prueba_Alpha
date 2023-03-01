@@ -7,8 +7,8 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent}, //enrutar la url=> https://www.algo.com/home
-  {path: 'login', component: LoginComponent}, //enrutar la url=> https://www.algo.com/
+  {path: '', component: HomeComponent}, //enrutar la url=> https://www.algo.com/
+  {path: 'login', component: LoginComponent}, //enrutar la url=> https://www.algo.com/login
   {path: 'register', component: RegisterComponent},
   {path: 'admin/inventario', component: InventarioComponent},
   {path: '404', component: NotfoundComponent},

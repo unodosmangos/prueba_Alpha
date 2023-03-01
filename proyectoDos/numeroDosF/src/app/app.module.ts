@@ -14,6 +14,10 @@ import { MainAdminComponent } from './components/admin/main-admin/main-admin.com
 import { ReactiveFormsModule } from '@angular/forms';
 import { NavbarHomeComponent } from './components/navbar/navbar-home/navbar-home.component';
 import { NavbarDashboardComponent } from './components/navbar/navbar-dashboard/navbar-dashboard.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { FirstviewComponent } from './components/home/firstview/firstview.component';
+import { SecondviewComponent } from './components/home/secondview/secondview.component';
+import { ThirdviewComponent } from './components/home/thirdview/thirdview.component';
 
 
 
@@ -29,6 +33,10 @@ import { NavbarDashboardComponent } from './components/navbar/navbar-dashboard/n
     MainAdminComponent,
     NavbarHomeComponent,
     NavbarDashboardComponent,
+    FooterComponent,
+    FirstviewComponent,
+    SecondviewComponent,
+    ThirdviewComponent,
   ],
   imports: [
     BrowserModule,
