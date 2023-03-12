@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthorizationService } from 'src/app/services/authorization.service';
 
 @Component({
   selector: 'app-navbar-dashboard',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NavbarDashboardComponent {
 
+  constructor(public auth: AuthorizationService){
+
+  }
 }

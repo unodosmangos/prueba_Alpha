@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -18,8 +20,10 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FirstviewComponent } from './components/home/firstview/firstview.component';
 import { SecondviewComponent } from './components/home/secondview/secondview.component';
 import { ThirdviewComponent } from './components/home/thirdview/thirdview.component';
+import { ApplyComponent } from './components/apply/apply.component';
 
-
+import { AuthorizationGuard } from './authorization.guard'
+import { TokenInterceptorService } from './services/token-interceptor.service'
 
 
 @NgModule({
@@ -37,13 +41,23 @@ import { ThirdviewComponent } from './components/home/thirdview/thirdview.compon
     FirstviewComponent,
     SecondviewComponent,
     ThirdviewComponent,
+    ApplyComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthorizationGuard,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
