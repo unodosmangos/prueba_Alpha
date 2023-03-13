@@ -27,7 +27,12 @@ import { TokenInterceptorService } from './services/token-interceptor.service';
 import { FourthviewComponent } from './components/home/fourthview/fourthview.component';
 import { FifthviewComponent } from './components/home/fifthview/fifthview.component';
 import { SixthviewComponent } from './components/home/sixthview/sixthview.component';
-import { HowItWorksComponent } from './components/how-it-works/how-it-works.component'
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { NavbarHiwComponent } from './components/navbar/navbar-hiw/navbar-hiw.component';
+import { UnoComponent } from './components/how-it-works/uno/uno.component';
+import { DosComponent } from './components/how-it-works/dos/dos.component';
+import { TresComponent } from './components/how-it-works/tres/tres.component';
+import { CuatroComponent } from './components/how-it-works/cuatro/cuatro.component'
 
 
 @NgModule({
@@ -50,6 +55,11 @@ import { HowItWorksComponent } from './components/how-it-works/how-it-works.comp
     FifthviewComponent,
     SixthviewComponent,
     HowItWorksComponent,
+    NavbarHiwComponent,
+    UnoComponent,
+    DosComponent,
+    TresComponent,
+    CuatroComponent,
   ],
   imports: [
     BrowserModule,
