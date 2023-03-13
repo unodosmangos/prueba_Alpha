@@ -1,27 +1,33 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <div class="d-flex justify-content-center align-items-center">
-      <a class="navbar-brand" href="#">
-        <img src="../../../../assets/img/BGT-Logo.png" alt="Logo" width="70" height="50"
-          class="d-inline-block align-text-top">
-      </a>
-      <a href="#" class="text-decoration-none text-dark">Asset <br> Management</a>
+  <div class="container-fluid row">
+    <div class="col-4">
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon bg-light"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="d-flex justify-content-center align-items-center me-auto">
+          <a class="px-3 text-decoration-none text-white fw-bold navtext" routerLink="/apply">Apply</a>
+          <a class="px-3 text-decoration-none text-white fw-bold navtext fw-semibold"
+            routerLink="/register">Register</a>
+          <a class="px-3 text-decoration-none text-white fw-bold navtext" routerLink="/how-it-works">How It Works</a>
+          <span class="d-none"><i class="mx-3 fa-solid fa-magnifying-glass"></i></span>
+          <a href="#" class="text-decoration-none d-none d-flex justify-content-center align-items-center mx-4 navtext">
+            <i class="fa-solid fa-globe text-black"></i>
+          </a>
+        </div>
+      </div>
     </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <div class="d-flex justify-content-center align-items-center ms-auto">
-        <a class="px-3 text-decoration-none text-black navtext" href="#">Markets</a>
-        <a class="px-3 text-decoration-none text-black navtext" routerLink="/apply">Apply</a>
-        <a class="px-3 text-decoration-none text-black navtext fw-semibold" routerLink="/register">Register</a>
-        <a class="px-3 text-decoration-none text-black navtext" href="#">Contact us</a>
-        <span class=""><i class="mx-3 fa-solid fa-magnifying-glass"></i></span>
-        <a href="#" class="text-decoration-none d-flex justify-content-center align-items-center mx-4 navtext">
-          <i class="fa-solid fa-globe text-black"></i>
+    <div class="col-4">
+      <div class="d-flex justify-content-center align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="../../../../assets/img/bank.png" alt="Logo" class="d-inline-block align-text-top logostyle">
         </a>
-        <button type="button" class="btn btn-outline-primary btn-sm rounded-0" routerLink="/login">Client login</button>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="d-flex justify-content-end">
+        <button type="button" class="btn btn-outline-light btn-sm rounded-0" routerLink="/login">Client login</button>
       </div>
     </div>
   </div>

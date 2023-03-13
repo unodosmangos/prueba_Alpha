@@ -1,9 +1,14 @@
 .homeImg{
   background-size: cover;
-  height: 89vh;
+  background-color: white;
 }
 
 .homeText{
   height: 89vh;
-  background-color: rgba($color: #000000, $alpha: 0.5);
+  background-color: white;
+}
+
+.imgRegister {
+  height: fit-content;
+  width: 100vh;
 }

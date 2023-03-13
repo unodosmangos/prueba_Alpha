@@ -23,7 +23,11 @@ import { ThirdviewComponent } from './components/home/thirdview/thirdview.compon
 import { ApplyComponent } from './components/apply/apply.component';
 
 import { AuthorizationGuard } from './authorization.guard'
-import { TokenInterceptorService } from './services/token-interceptor.service'
+import { TokenInterceptorService } from './services/token-interceptor.service';
+import { FourthviewComponent } from './components/home/fourthview/fourthview.component';
+import { FifthviewComponent } from './components/home/fifthview/fifthview.component';
+import { SixthviewComponent } from './components/home/sixthview/sixthview.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component'
 
 
 @NgModule({
@@ -42,6 +46,10 @@ import { TokenInterceptorService } from './services/token-interceptor.service'
     SecondviewComponent,
     ThirdviewComponent,
     ApplyComponent,
+    FourthviewComponent,
+    FifthviewComponent,
+    SixthviewComponent,
+    HowItWorksComponent,
   ],
   imports: [
     BrowserModule,

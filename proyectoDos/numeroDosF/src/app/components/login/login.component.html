@@ -1,19 +1,23 @@
 <app-navbar-home></app-navbar-home>
-<div class="homeImg" style="background-image: url(https://www.cepal.org/sites/default/files/styles/1920x1080/public/regionaloffice/images/bogota.jpg?itok=ZVM_inQP);">
-  <form (submit)="signIn()" class="form-group d-flex flex-column justify-content-center align-items-center g-3 homeText">
-    <div class="mt-1" style="width: 400px;">
+<div class="row loginStyle">
+  <img class="col-7 imglogin" src="https://miro.medium.com/v2/resize:fit:1400/1*VuRMGPKL5vgl_22OhhnbiQ.gif" alt="">
+  <form (submit)="signIn()" class="col-5 form-group d-flex flex-column justify-content-center align-items-center g-3 homeText">
+    <h5 class="text-black">Log In</h5>
+    <div class="mt-1" style="width: 300px;">
       <input type="text" [(ngModel)]="user.email" name="email" class="form-control text-center" id="validationEmail" value="" required placeholder="Email" autofocus>
     </div>
-    <div class="mt-1" style="width: 400px;">
+    <div class="mt-1" style="width: 300px;">
       <input type="password" [(ngModel)]="user.password" name="password" class="form-control text-center" id="validationPassword" value="" required placeholder="Password">
     </div>
     <div class="mt-3">
       <div class="form-check d-flex">
-        <p class="text-white">Don't have an account?</p><a class="mx-3" routerLink="/register">Register</a>
+        <p class="text-black">Don't have an account?</p><a class="mx-3 text-black" routerLink="/register">Register</a>
       </div>
     </div>
-    <div class="mt-2">
-      <button class="btn btn-primary" type="submit">  Sign In  </button>
+    <div class="mt-1">
+      <button class="btn btn-primary signinStyle" type="submit">  Sign In  </button>
     </div>
   </form>
+
+
 </div>

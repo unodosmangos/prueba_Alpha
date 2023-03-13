@@ -8,13 +8,14 @@ import { NotfoundComponent } from './components/notfound/notfound.component';
 import { RegisterComponent } from './components/register/register.component';
 
 import { AuthorizationGuard } from './authorization.guard';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent}, //enrutar la url=> https://www.algo.com/
   {path: 'login', component: LoginComponent}, //enrutar la url=> https://www.algo.com/login
   {path: 'register', component: RegisterComponent},
   {path: 'apply', component: ApplyComponent, canActivate: [AuthorizationGuard]},
-  {path: 'admin/inventario', component: InventarioComponent},
+  {path: 'how-it-works', component: HowItWorksComponent},
   {path: '404', component: NotfoundComponent},
   {path: '**', redirectTo: '404', pathMatch: 'full'} //este path siempre de ultimo.
 ];

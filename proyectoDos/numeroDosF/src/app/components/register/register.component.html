@@ -1,16 +1,18 @@
 <app-navbar-home></app-navbar-home>
-<div class="homeImg" style="background-image: url(https://www.cepal.org/sites/default/files/styles/1920x1080/public/regionaloffice/images/bogota.jpg?itok=ZVM_inQP);">
+<div class="homeImg d-flex align-items-center justify-content-center">
+  <img class="imgRegister" src="https://i.pinimg.com/originals/fe/93/b0/fe93b053043276b38386e625295af6cc.gif" alt="">
   <form (submit)="signUp()" class="form-group d-flex flex-column justify-content-center align-items-center g-3 homeText">
-    <div class="mt-1" style="width: 400px;">
+    <h5 class="text-black">Register</h5>
+    <div class="mt-1" style="width: 300px;">
       <input type="text" [(ngModel)]="user.email" name="email" class="form-control text-center" id="validationEmail" value="" required placeholder="Email" autofocus>
     </div>
-    <div class="mt-1" style="width: 400px;">
+    <div class="mt-1" style="width: 300px;">
       <input type="password" [(ngModel)]="user.password" name="password" class="form-control text-center" id="validationPassword" value="" required placeholder="Password">
     </div>
     <div class="mt-2">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-        <label class="form-check-label text-white" for="invalidCheck2">
+        <label class="form-check-label text-black" for="invalidCheck2">
           Agree to terms and conditions
         </label>
       </div>
